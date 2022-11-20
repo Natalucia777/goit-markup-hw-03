@@ -58,9 +58,7 @@
 }
 
 /* logo */
-.logo-bottom {
-  color: var(--background-page-color);
-}
+
 .logo {
   display: flex;
   align-items: center;
@@ -104,7 +102,10 @@ background-color: aquamarine;
 .page-header {
   background-color: var(--background-page-color);
 }
+
+
 .container {
+  display: flex;
   width: 1170px;
   display: flex;
   padding-left: 15px;
@@ -219,6 +220,7 @@ button.hero-action {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 .section-sub-title,
 .benefits-sub-title {
@@ -239,32 +241,81 @@ button.hero-action {
 }
 .benefits-sub {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 86px;
+    flex-direction: row;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 86px;
+    margin-left: 0;
+ 
+  /* margin: 0 0 86px 0;
+  padding: 0; */
 }
 .benefits-sub-list {
   display: flex;
+  margin-top: 0;
   margin-right: 30px;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 .benefits-sub-list:nth-child(3) {
   margin-right: 0;
 }
+
 /* team */
+.team {
+  background-color: var(--team-action-color);
+}
+.team-box {
+  display: flex;
+  flex-direction: column;
+}
+.team-title {
+  margin-top: 102px;
+  margin-bottom: 50px;
+}
+.team-sub {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 88px; 
+}
+.team-sub-list {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  align-items: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-sub-list:nth-child(4) {
+  margin-right: 0;
+}
 .team .text {
   font-size: 16px;
   line-height: 1.19;
 }
-.team {
-  background-color: var(--team-action-color);
-} 
+
+
 /* futter */
 .bottom {
   background-color: var(--background-bottom-color);
+}
+.bottom-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+  align-items: flex-start;
+}
+.logo-bottom {
+  color: var(--background-page-color);
+  margin: 60px 0 20px 0;
+
 }
 .address-footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 60px;
 }
 .bottom-adress {
   color: var(--background-page-color);
