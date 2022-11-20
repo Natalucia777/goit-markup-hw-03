@@ -27,6 +27,10 @@
 .section {
   padding: 94px 0 94px 0;
 }
+ul, p, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
 .list {
   color: var(--title-text-color);
   list-style: none;
@@ -128,10 +132,11 @@
 }
 .hero-box {
   flex-direction: column;
+  margin-top: 106px;
+  margin-bottom: 106px; 
 }
 .hero-title {
-  margin-top: 106px;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
   color: var(--background-page-color);
   font-weight: 900;
   font-size: 44px;
@@ -149,7 +154,6 @@ button.hero-action {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  margin-bottom: 106px;
   min-width: 216px;
   min-height: 50px;
   justify-content: center;
@@ -261,7 +265,7 @@ button.hero-action {
   display: flex;
   flex-direction: row;
   width: 1170px;
-  margin-top: 0;
+  margin: 0;
   padding: 0;
 }
 .team-sub-list {
@@ -275,11 +279,14 @@ button.hero-action {
 }
 .team-sub-list:nth-child(4) {
   margin-right: 0;
+  padding-bottom: 30px;
+}
+.team-sub-list .section-sub-title {
+  margin-bottom: 10px;
 }
 .team .text {
   font-size: 16px;
   line-height: 1.19;
-  margin-bottom: 30px;
 }
 /* futter */
 .bottom {
@@ -290,10 +297,11 @@ button.hero-action {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-top: 64px;
+  padding-bottom: 62px;
 }
 .logo-bottom {
   color: var(--background-page-color);
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 .address-footer {
@@ -313,14 +321,18 @@ button.hero-action {
   color: var(--accent-text-color);
 }
 .bottom-sub-list {
-  margin-bottom: 60px;
+  font-style: normal; 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin: 0;
 }
 
 /* portfolio */
 .portfolio-box {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 .visually-hidden {
@@ -345,7 +357,7 @@ button.hero-action {
 }
 .action-btn:nth-child(5) {
   margin-right: 0;
-}
+} 
 .list-action {
   background-color: var(--team-action-color);
   color: var(--title-text-color);
@@ -354,12 +366,31 @@ button.hero-action {
   line-height: 1.63;
   letter-spacing: 0.03em;
   cursor: pointer;
+  min-height: 38px;
+  border-radius: 4px 4px 4px 4px;
+  border-style: none;
 }
 .list-action:hover,
 .list-action:focus,
 .list-action:active {
   background-color: var(--accent-text-color);
   color: var(--background-page-color);
+}
+
+.action-btn:first-child .list-action{
+  min-width: 73px;
+}
+.action-btn:nth-child(2) .list-action {
+  min-width: 125px;
+}
+.action-btn:nth-child(3) .list-action {
+  min-width: 112px;
+}
+.action-btn:nth-child(4) .list-action {
+  min-width: 103px;
+}
+.action-btn:nth-child(5) .list-action {
+  min-width: 130px;
 }
 .portfolio-list {
   display: flex;
@@ -388,14 +419,17 @@ button.hero-action {
   line-height: 2;
   letter-spacing: 0.06em;
   padding: 0;
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin: 0;
 }
 .work-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
+}
+.item-img {
+  display: flex;
 }
 .card-list-title {
   margin: 20px 24px 20px 24px;
