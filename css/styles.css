@@ -241,22 +241,16 @@ button.hero-action {
 }
 .benefits-sub {
   display: flex;
-    flex-direction: row;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 86px;
-    margin-left: 0;
- 
-  /* margin: 0 0 86px 0;
-  padding: 0; */
+  flex-direction: row;
+  /* width: 1170px; */
+  margin-bottom: 86px; 
+  /* margin: 0 0 86px 0;*/
+  /* padding: 0;  */
 }
 .benefits-sub-list {
   display: flex;
-  margin-top: 0;
   margin-right: 30px;
-  margin-left: 0;
-  margin-bottom: 0;
-  padding: 0;
+  /* padding: 0; */
 }
 .benefits-sub-list:nth-child(3) {
   margin-right: 0;
@@ -274,9 +268,13 @@ button.hero-action {
   margin-top: 102px;
   margin-bottom: 50px;
 }
+.picture {
+  margin-bottom: 30px;
+}
 .team-sub {
   display: flex;
   flex-direction: row;
+  width: 1170px;
   margin-bottom: 88px; 
 }
 .team-sub-list {
@@ -293,6 +291,7 @@ button.hero-action {
 .team .text {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 30px;
 }
 
 
@@ -308,14 +307,14 @@ button.hero-action {
 }
 .logo-bottom {
   color: var(--background-page-color);
-  margin: 60px 0 20px 0;
-
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
+
 .address-footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 60px;
 }
 .bottom-adress {
   color: var(--background-page-color);
@@ -327,6 +326,9 @@ button.hero-action {
 .bottom-text:hover,
 .bottom-text:focus {
   color: var(--accent-text-color);
+}
+.bottom-sub-list {
+margin-bottom: 60px;
 }
 
 /* portfolio */
